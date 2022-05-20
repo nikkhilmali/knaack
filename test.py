@@ -35,7 +35,7 @@ def real(xtext):
         ytext = "What's your name?"
     elif "monsoon" in xtext:
         ytext = "What's today's weather?"
-    elif "how are" in xtext:
+    elif "mood" in xtext:
         ytext = "how are you?"
     else:
         ytext = ""
@@ -43,9 +43,9 @@ def real(xtext):
 
 
 def send_message(message):
-    print((message))
+    print(message)
     response = res(message)
-    print((response))
+    print(response)
 
 
 while 1:
