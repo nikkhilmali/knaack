@@ -1,15 +1,14 @@
 import random
-name = "Bot number 286"
-monsoon = "rainy"
+college_name = "Techno India NJR Institute of Technology"
+bot_name = "Knaack"
 mood = "horny"
 resp = {
+    "What's your college name?": [
+        "Techno India NJR Institute of Technology"],
     "What's your name?": [
-        "They call me {0}".format(name),
-        "I usually go by {0}".format(name),
-        "My name is the {0}".format(name)],
-    "What's today's weather?": [
-        "The weather is {0}".format(monsoon),
-        "It's {0} today".format(monsoon)],
+        "They call me {0}".format(bot_name),
+        "I usually go by {0}".format(bot_name),
+        "My name is the {0}".format(bot_name)],
     "How are you?": [
         "I'm feeling {0}".format(mood),
         "{0}! How about you?".format(mood),
@@ -31,10 +30,10 @@ def res(message):
 
 
 def real(xtext):
-    if "name" in xtext:
+    if "college" in xtext:
+        ytext = "What's your college name?"
+    elif "name" in xtext:
         ytext = "What's your name?"
-    elif "monsoon" in xtext:
-        ytext = "What's today's weather?"
     elif "mood" in xtext:
         ytext = "how are you?"
     else:
