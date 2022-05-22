@@ -1,7 +1,6 @@
 import random
 college_name = "Techno India NJR Institute of Technology"
 bot_name = "Knaack"
-mood = "horny"
 resp = {
     "What's your college name?": [
         "Techno India NJR Institute of Technology"],
@@ -9,10 +8,6 @@ resp = {
         "They call me {0}".format(bot_name),
         "I usually go by {0}".format(bot_name),
         "My name is the {0}".format(bot_name)],
-    "How are you?": [
-        "I'm feeling {0}".format(mood),
-        "{0}! How about you?".format(mood),
-        "I am {0}! How about yourself?".format(mood), ],
     "": [
         "Hi! Are you there?",
         "What do you mean by these?",
@@ -34,8 +29,6 @@ def real(xtext):
         ytext = "What's your college name?"
     elif "name" in xtext:
         ytext = "What's your name?"
-    elif "mood" in xtext:
-        ytext = "how are you?"
     else:
         ytext = ""
     return ytext
